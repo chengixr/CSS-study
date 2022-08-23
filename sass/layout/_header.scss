@@ -8,9 +8,22 @@
                   rgba($color-primary-dark, .8)),
   url("../../img/hero.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
 
 
   &__logo-box {
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+  }
 
+  &__logo {
+    height: 3rem;
+  }
+
+  &__text-box {
+    @include abs-center;
+    top: 40%;
+    text-align: center;
   }
 }
